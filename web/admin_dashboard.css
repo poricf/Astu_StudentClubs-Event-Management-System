@@ -1,0 +1,98 @@
+/* admin_dashboard.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+#sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#sidebar .white-label {
+    height: 50px;
+    background-color: #fff;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+}
+
+#sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #555;
+}
+
+#sidebar ul li.active a {
+    background-color: #555;
+}
+
+/* Content area styles */
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Header styles */
+#header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-nav {
+    float: right;
+}
+
+.menu-button {
+    display: none; /* Hide the menu button for larger screens */
+}
+
+/* Widget box styles */
+.widget-box {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.widget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.widget-header h2 {
+    margin: 0;
+}
+
+.widget-header i {
+    cursor: pointer;
+}
+
+.widget-content img {
+    max-width: 100%;
+    height: auto;
+}

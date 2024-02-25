@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="total.css">
+    <style>
+        body {
+            font-family: 'Balsamiq Sans', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .login-option {
+            width: 300px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .login-option img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .login-option h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Welcome To <span style="color: #ffa500;">Event Portal</span></h1>
+        </div>
+    </header>
+    <marquee scrollamount="10" direction="left">
+        <h2>Please choose the below links to login to your account.</h2>
+    </marquee>
+    <div class="login-options">
+        <div class="login-option">
+            <img src="admin.jpg" alt="Admin Image">
+            <h3>Admin Login</h3>
+            <a href="Alogin.html" class="btn">Admin Login</a>
+        </div>
+        <div class="login-option">
+            <img src="part.jpg" alt="Participant Image">
+            <h3>For Users</h3>
+            <a href="Parlogin.html" class="btn">User's Login</a>
+        </div>
+    </div>
+</body>
+</html>

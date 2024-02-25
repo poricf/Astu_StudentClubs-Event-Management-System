@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        form {
+            display: grid;
+            grid-gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Event Registration</h2>
+    <form id="eventRegistrationForm" onsubmit="registerForEvent(event)">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required>
+
+        <label for="participantName">Participant Name:</label>
+        <input type="text" id="participantName" name="participantName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+
+        <label for="additionalInfo">Additional Information:</label>
+        <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="50"></textarea>
+
+        <button type="submit">Register for Event</button>
+    </form>
+</div>
+
+<script>
+    function registerForEvent(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        // Perform event registration logic here (you can send data to a server, etc.)
+
+        // Show registration successful alert
+        alert("Event registration is successful!");
+    }
+</script>
+
+</body>
+</html>

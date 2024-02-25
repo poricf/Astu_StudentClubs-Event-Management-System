@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin's Page For Event Management</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap">
+    <link rel="stylesheet" href="total.css"> <!-- Include your custom CSS file here -->
+
+    <style>
+        body {
+            padding-top: 56px; /* Adjusted to accommodate fixed-top navbar */
+            font-family: 'Balsamiq Sans', cursive;
+            background: url('images/BG33.jpg') center center fixed;
+            background-size: cover;
+            color: #007bff; /* Adjust text color based on your background */
+        }
+
+        #common {
+            margin-top: 20px;
+            font-size: 30px;
+            color: #007bff; /* Bootstrap primary color */
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+         /* Adjusted styles for buttons and images */
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        img {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+
+        /* Additional styling for the overall layout */
+        .container-fluid {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Event Portal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    
+                   
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+    <span style="float:right">
+        <a href="Alogin.html"><button class="btn btn-danger">Logout</button></a>
+    </span>
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="images/addmin.jpg" alt="Events" width="200" height="100">
+            <h2 id="common">Welcome Admin!</h2>
+        </div>
+        
+        <br>
+        
+        
+        <br>
+        
+        <div class="text-center mt-4">
+           
+            <h2 style="font-size: 20px;">Event Management</h2>
+            <a href="CreateE.jsp"><button class="btn btn-primary">Create Event</button></a>
+            <a href="ViewEvents"><button class="btn btn-secondary">View Events</button></a>
+        </div>
+        
+        <br>
+        <br>
+        
+
+        <div class="text-center mt-5">
+            <img src="images/stats.jpg" alt="Trans" width="200" height="100">
+            <h3 style="font-size: 20px;">Over all Stat</h3>
+            <a href="Statistics.jsp"><button class="btn btn-info">Statistics</button></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
